@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #191d28;
+}
+.nav {
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.logo>img{
+    width: 400px;
+    padding-left: 40px;
+}
+button>img{
+    height: 20px;
+    margin-right: 10px;
+    width: 30px;
+}
+.mid{
+    font-family: Oswald;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 50px;
+    padding: 5px;
+    background-color: #2e3241;
+    color: white;
+}
+.last{
+    display: flex;
+}
+.timer{
+    width: 20px;
+    height: 20px;
+    border: 6px solid white;
+    border-radius: 100px;
+    padding: 10px;
+}
+.telegram{
+    background-color: aqua;
+    margin-right: 20px;
+}
+.price_section {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    overflow-x: scroll;
+    min-height: 70vh;
+}
+
+.titals {
+    color: #a4a4a4;
+    background-color: #232431;
+    display: flex;
+    height: 10vh;
+    min-width: 1300px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.titals li ,.price_box li{
+    font-family: Oswald;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0 0 -5px;
+    list-style: none;
+    width: 250px;
+}
+
+.price_box {
+    color: white;
+    display: flex;
+    background-color: #2e3241;
+    height: 7vh;
+    min-width: 1300px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 8px;
+    border-radius: 20px;
+}
+.footer {
+    color: white;
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    bottom: 0;
+
+}
+
+
+@media (max-width:1200px) {
+    .nav {
+        flex-direction: column;
+        height: 25vh;
+    }
+}
