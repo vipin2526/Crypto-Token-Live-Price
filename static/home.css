@@ -105,4 +105,12 @@ button>img{
         flex-direction: column;
         height: 25vh;
     }
+    .mid{
+        margin-left: 10px;
+        
+    }
+    .logo>img{
+        width: 300px;
+        padding-left: 10px;
+    }
 }
