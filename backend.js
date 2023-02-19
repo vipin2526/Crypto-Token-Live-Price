@@ -1,9 +1,20 @@
 const express = require('express')
 const request = require('request')    /// used for get request from API
 const dbconnect = require('./mongo')
-const app = express();
+const cors = require('cors');
 
-const port = process.env|3000;
+const app = express();
+const port = process.env.port || 3000;
+
+const { prototype } = require('events');
+app.use(express.json());
+app.use(cors({
+    "origin": "*",
+    "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "preflightContinue": false,
+    "optionsSuccessStatus": 204
+}))
+
 
 //// get_price() fetch data form Wazirx API
 function get_price() {
