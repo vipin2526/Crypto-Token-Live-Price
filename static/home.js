@@ -1,5 +1,5 @@
 let price_section = document.querySelector('.price_section');
-const url = "https://xmartcoder-curly-enigma-9g7w6rj7q9v26r-3000.preview.app.github.dev/";
+const url = "https://outrageous-lamb-miniskirt.cyclic.app";
 
 fetch(url).then(async function (data) {
     let dat = await data.json(); show(dat);
